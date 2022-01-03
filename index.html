@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css">
+  <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css' type='text/css'>
+  
+  <title>Tip Calculator App</title>
+
+</head>
+<body>
+  <header>
+    <img src="assets/logo.svg" alt="Tip calculator logo">
+  </header>
+  <main class="container">
+    <div class="input-data">
+      <section id="bill">
+        <label for="bill-price">Bill</label>
+        <input type="number" step="0.01" name="bill-price" id="bill-price" placeholder="&#xf155">
+      </section>
+  
+      <section id="number-people">      
+        <label for="qty-people">Number of People</label>
+        <input type="number" name="qty-people" id="qty-people" placeholder="&#xf007">
+      </section>
+      
+      <section id="tip-selector">
+        <h2>Select Tip %</h2>
+  
+        <div class="buttons-area">
+          <button id="tip-five">5%</button>
+          <button id="tip-ten">10%</button>
+        </div>
+        <div class="buttons-area">
+          <button id="tip-fifteen">15%</button>
+          <button id="tip-twenty-five">25%</button>
+        </div>
+        <div class="buttons-area">
+          <button id="tip-fifty">50%</button>
+          <button id="tip-zero">0%</button>
+        </div>       
+      </section>
+    </div>
+
+    <div class="result-data">
+      <section id="amount">
+        <div class="values">
+          <div class="tip-text">
+            <p id="p-title">Tip Amount</p>
+            <p id="p-subtitle">/ person</p>
+          </div>
+          <div class="tip-result">
+            <p id="tip-result-value">$ 4.27</p>
+          </div>
+        </div>
+
+        <div class="values">
+          <div class="tip-text">
+            <p id="p-title">Total</p>
+            <p id="p-subtitle">/ person</p>
+          </div>
+          <div class="total-result">
+            <p id="total-result-value">$ 4.27</p>
+          </div>
+        </div>
+
+        <div class="values">
+          <div class="tip-text">
+            <p id="p-title">Amount to be paid</p>
+            <p id="p-subtitle">/ person</p>
+          </div>
+          <div class="bill-total-result">
+            <p id="bill-result-value">$ 4.27</p>
+          </div>
+        </div>
+
+        <button id="reset">Reset</button>
+      </section>
+    </div>
+  </main> 
+  <script src="./scripts.js"></script>
+</body>
+</html>
